@@ -7,12 +7,12 @@ from fabric.api import task, env, run, settings, cd, put, sudo
 # These are the main arguments for tasks (i.e. included in **args)
 # Other arguments will be defined per task
 DEFAULTS = {
-    'home': '/home/mr',
+    'home': '/home/ubuntu',
     'config_file': 'config.ini',
     'redis_config_file': None,
     'environment': 'dev',
     'project': 'modelrunner',
-    'modelrunner_repo': 'https://github.com/SEL-Columbia/modelrunner',
+    'modelrunner_repo': 'https://github.com/ingenieroariel/modelrunner',
     'modelrunner_branch': 'master'
     }
 
