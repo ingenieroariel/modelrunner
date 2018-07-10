@@ -9,8 +9,8 @@ from fabric.api import task, env, run, settings, cd, put, sudo
 DEFAULTS = {
     'home': '/home/ubuntu',
     'config_file': 'config.ini',
-    'redis_config_file': None,
-    'environment': 'dev',
+    'redis_config_file': 'redis-sample.conf',
+    'environment': 'prod',
     'project': 'modelrunner',
     'modelrunner_repo': 'https://github.com/ingenieroariel/modelrunner',
     'modelrunner_branch': 'master'
@@ -175,7 +175,7 @@ def start_redis(**args):
     setup_env(**args)
 
     # stop existing redis
-    stop_redis()
+    #stop_redis()
 
     print("starting redis server on %(host_string)s" % env)
     with cd(env.project_directory):
