@@ -319,3 +319,10 @@ docker-compose -p worker2 up -d server
 Then get the ip addresses and setup the servers via steps 4-7 from the deployment steps above.  
 
 If you want to pass through the ports and/or the worker ip addresses to the host (e.g. to test the web site manually), you may need to create custom docker-compose files (really straightforward following docker documentation)
+
+
+Ubuntu 18.04
+------------
+
+downgrade to python 3.6
+conda install gdal==2.1
