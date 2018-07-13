@@ -326,3 +326,9 @@ Ubuntu 18.04
 
 downgrade to python 3.6
 conda install gdal==2.1
+
+ File "/home/ubuntu/infrastructure-planning/infrastructure_planning/preprocessors.py", line 24, in normalize_demand_point_table
+    if column not in demand_point_table.columns:
+AttributeError: 'OrderedDict' object has no attribute 'columns'
+
+
