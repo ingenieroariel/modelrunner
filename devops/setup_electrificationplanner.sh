@@ -9,7 +9,7 @@ conda config --set always_yes yes
 echo "Setup electrificationplanner env"
 # electrificationplanner requires full source to run
 rm -rf $HOME/infrastructure-planning
-git clone https://github.com/SEL-Columbia/infrastructure-planning
+git clone https://github.com/piensa/infrastructure-planning
 
 # install dependencies
 rm -rf $HOME/miniconda/envs/electrificationplanner

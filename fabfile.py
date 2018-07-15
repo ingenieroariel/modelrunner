@@ -12,7 +12,7 @@ DEFAULTS = {
     'redis_config_file': 'redis-sample.conf',
     'environment': 'prod',
     'project': 'modelrunner',
-    'modelrunner_repo': 'https://github.com/ingenieroariel/modelrunner',
+    'modelrunner_repo': 'https://github.com/piensa/modelrunner',
     'modelrunner_branch': 'master'
     }
 
