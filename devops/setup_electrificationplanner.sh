@@ -15,3 +15,5 @@ git clone https://github.com/piensa/infrastructure-planning
 rm -rf $HOME/miniconda/envs/electrificationplanner
 conda create -n electrificationplanner python=2.7
 conda install -n electrificationplanner -c conda-forge -c sel infrastructure-planning
+
+conda install -n electrificationplanner gdal==2.3
