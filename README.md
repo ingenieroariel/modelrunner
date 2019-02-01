@@ -325,10 +325,68 @@ Ubuntu 18.04
 ------------
 
 downgrade to python 3.6
-conda install gdal==2.1
-
+conda install gdal==2.3
+```
  File "/home/ubuntu/infrastructure-planning/infrastructure_planning/preprocessors.py", line 24, in normalize_demand_point_table
     if column not in demand_point_table.columns:
 AttributeError: 'OrderedDict' object has no attribute 'columns'
+```
 
+Last known working version
+--------------------------
 
+```
+(electrificationplanner) ~/modelrunner$ pip freeze
+archiveIO==0.4.4
+attrs==18.1.0
+backports-abc==0.5
+backports.functools-lru-cache==1.5
+certifi==2018.4.16
+click==6.7
+click-plugins==1.0.3
+cligj==0.4.0
+configparser==3.5.0
+cycler==0.10.0
+Cython==0.28.4
+decorator==4.3.0
+enum34==1.1.6
+Fiona==1.7.12
+funcsigs==1.0.2
+functools32==3.2.3.post2
+futures==3.2.0
+GDAL==2.3.0
+geographiclib==1.49
+geometryIO==0.9.7.6
+geopy==1.14.0
+-e git+https://github.com/piensa/infrastructure-planning@112328b917366b297c408aa42594b5b048e40b38#egg=infrastructure_planning
+invisibleroads-macros==0.9.4.4
+jsonschema==2.6.0
+kiwisolver==1.0.1
+llvmlite==0.23.2
+matplotlib==2.2.2
+mkl-fft==1.0.2
+mkl-random==1.0.1
+munch==2.3.2
+-e git+https://github.com/sel-columbia/networker@d9aee4f1d4f0ed530e4f5986c353af55f1a85207#egg=networker
+networkx==1.11
+nose==1.3.7
+numba==0.38.0+0.g2a2b772fc.dirty
+numexpr==2.6.4
+numpy==1.14.5
+pandas==0.23.3
+pathlib==1.0.1
+pyparsing==2.2.0
+pyproj==1.9.5.1
+python-dateutil==2.7.3
+pytz==2018.5
+Rtree==0.8.3
+scikit-learn==0.19.1
+scipy==1.1.0
+-e git+https://github.com/sel-columbia/sequencer@e8f38fdb3a6dea6d3cdcea4943b71a4d75fdd08f#egg=Sequencer
+Shapely==1.6.4.post1
+simplejson==3.16.0
+singledispatch==3.4.0.3
+six==1.11.0
+subprocess32==3.5.2
+tornado==5.1
+```

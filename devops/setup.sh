@@ -23,4 +23,4 @@ fi
 export PATH="$HOME/miniconda/bin:$PATH"
 
 conda config --set always_yes yes
-conda update -q conda
+conda update -q conda 
