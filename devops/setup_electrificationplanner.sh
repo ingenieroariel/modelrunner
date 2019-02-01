@@ -17,3 +17,4 @@ conda create -n electrificationplanner python=2.7
 conda install -n electrificationplanner -c conda-forge -c sel infrastructure-planning
 
 conda install -n electrificationplanner gdal=2.2
+conda install -n electrificationplanner "poppler<0.62"
