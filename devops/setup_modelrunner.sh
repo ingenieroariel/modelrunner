@@ -6,5 +6,5 @@ source $HOME/.bash_profile
 rm -rf $HOME/miniconda/envs/modelrunner
 
 conda config --set always_yes yes
-conda create -n modelrunner python=3
+conda create -n modelrunner python=3.5
 conda install --yes -c sel -n modelrunner modelrunner
