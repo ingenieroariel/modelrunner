@@ -20,7 +20,7 @@ fi
 
 # restart nginx for production static server
 # assumes we're in modelrunner dir
-#sudo rm -f /etc/nginx/sites-enabled/*
+sudo rm -f /etc/nginx/sites-enabled/worker
 sudo cp devops/worker.nginx /etc/nginx/sites-available/worker
 sudo ln -s /etc/nginx/sites-available/worker /etc/nginx/sites-enabled/
 sudo service nginx restart 
