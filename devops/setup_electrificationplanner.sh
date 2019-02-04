@@ -12,7 +12,7 @@ rm -rf $HOME/infrastructure-planning
 git clone https://github.com/piensa/infrastructure-planning
 pushd infrastructure-planning
 # get to commit with pinned versions
-git checkout e96f93c69422e9ef4f47582cade269a15cfabaee
+git checkout 92b2a4a0c06ee9f6ab2b972ed7b202031ecac775
 popd
 
 # install dependencies
