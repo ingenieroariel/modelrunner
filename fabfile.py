@@ -9,7 +9,7 @@ from fabric.api import task, env, run, settings, cd, put, sudo
 DEFAULTS = {
     'home': '/home/ubuntu',
     'config_file': 'config.ini',
-    'redis_config_file': 'redis-sample.conf',
+    'redis_config_file': 'redis.conf',
     'environment': 'prod',
     'project': 'modelrunner',
     'modelrunner_repo': 'https://github.com/piensa/modelrunner',
