@@ -18,4 +18,4 @@ git clone https://github.com/piensa/sequencer
 rm -rf $HOME/miniconda/envs/electrificationplanner
 conda env create -f infrastructure-planning/packages.txt
 conda install -n electrificationplanner -c conda-forge -c sel infrastructure-planning
-conda install -n electrificationplanner -c conda-forge -c sel sequencer
+pip install -U -e $HOME/sequencer
