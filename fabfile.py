@@ -122,6 +122,13 @@ def setup_model(model, **args):
         format(model=model)
     run_conda_enabled(setup_script)
 
+@task
+def setup_sequencer(**args):
+    setup_env(**args)
+    run("rm -rf ./sequencer")
+    run("git clone https://github.com/piensa/sequencer")
+    run_conda_enabled("./miniconda/envs/electrificationplanner/bin/pip install -U --no-deps -e ./sequencer")
+
 
 @task
 def update_modelrunner(**args):
