@@ -7,6 +7,8 @@ from fabric.api import task, env, run, settings, cd, put, sudo
 # These are the main arguments for tasks (i.e. included in **args)
 # Other arguments will be defined per task
 DEFAULTS = {
+    'user': 'ubuntu',  
+    'host': 'localhost',
     'home': '/home/ubuntu',
     'config_file': 'config.ini',
     'redis_config_file': 'redis.conf',
