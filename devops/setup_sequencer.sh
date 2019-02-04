@@ -9,7 +9,11 @@ conda config --set always_yes yes
 # don't change the version in the meta.yaml
 rm -rf $HOME/miniconda/pkgs/sequencer*
 
+rm -rf $HOME/sequencer
+git clone https://github.com/piensa/sequencer
+
 echo "Setup Sequencer env"
 rm -rf $HOME/miniconda/envs/sequencer
 conda create -n sequencer python=2.7
 conda install -n sequencer -c sel sequencer
+pip install -U --no-deps -e $HOME/sequencer
